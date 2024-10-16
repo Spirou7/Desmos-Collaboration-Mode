@@ -11,7 +11,7 @@ addEventListener("keyup", (event) => {
   sendDesmosFormatting();
 });
 
-const socket = new WebSocket('wss://desmosliveserver.spirou7.repl.co/echo'); 
+const socket = new WebSocket('wss://8080-cs-bcde6355-336f-4181-8031-5d0f8d1291ad.cs-us-west1-ijlt.cloudshell.dev/echo'); 
 
 socket.onopen = function(event) {
     socketStatus.innerHTML = 'Connected to: ' + event.currentTarget.url;

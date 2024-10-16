@@ -44,7 +44,6 @@ app.ws('/echo', (ws, req) => {
         console.log("client session ID:" + clients[client]);
         console.log("current session ID:" + clients[ws]);
         if (client !== ws && clients.get(client) == clients.get(ws)) {
-          console.log("client from session has been updated!");
           client.send(message);
         }
       });
@@ -62,9 +61,6 @@ function displayMessageInfo(message) {
 }
 // set the "public" folder to be the default domain
 app.use(express.static("public"));
-let server = app.listen(5000, function() {
+let server = app.listen(8080, function() {
   console.log("to end press Ctrl + C");
-  //console.log('Server listening:', `http://${server.address().address}:${server.address().port}`);
 });
-
-//console.log('Server listening:', `http://${server.address().address}:${server.address().port}`);
