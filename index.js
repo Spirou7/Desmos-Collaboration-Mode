@@ -64,7 +64,7 @@ function displayMessageInfo(message) {
 app.use(express.static("public"));
 let server = app.listen(3000, function() {
   console.log("to end press Ctrl + C");
-  console.log('Server listening:', `http://${server.address().address}:${server.address().port}`);
+  //console.log('Server listening:', `http://${server.address().address}:${server.address().port}`);
 });
 
-console.log('Server listening:', `http://${server.address().address}:${server.address().port}`);
+//console.log('Server listening:', `http://${server.address().address}:${server.address().port}`);
