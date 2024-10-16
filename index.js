@@ -62,7 +62,7 @@ function displayMessageInfo(message) {
 }
 // set the "public" folder to be the default domain
 app.use(express.static("public"));
-let server = app.listen(3000, function() {
+let server = app.listen(5000, function() {
   console.log("to end press Ctrl + C");
   //console.log('Server listening:', `http://${server.address().address}:${server.address().port}`);
 });
